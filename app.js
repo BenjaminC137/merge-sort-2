@@ -56,37 +56,22 @@ function currentDate () {
 	return(month + "/" + day + "/" + year);
 }
 
-//function isLeap(yearInput){
-////	var currentDate = new Date(Date.now());
-////	var year = currentDate.getFullYear();
+
 //
-//	if(yearInput % 4 != 0){
-//		return false;
-//	}
-//	else if(yearInput % 100 == 0 && yearInput % 400 != 0){
-//		return false;
-//	}
-//	else{
-//		return true;
-//	}
-//	return true;
-//}
-
-//function areConsecutive(a,b,c,d,e){
-//	var myArray = [a,b,c,d,e];
-//	for(i = 0; i < 5; i ++)
-//	if((myArray[i] + 1) != (myArray[i + 1])){
-//		return false;
-//	}
-//	return true;
+//function testForArrays() {
+//	var myArray = [4,3,4,3,5];
+//	return myArray;
 //}
 
 
+function mergesort (entryArray) {
+//	var entryArray = [arguments];
+	var length = entryArray.length;
+	var halfLength = Math.floor(length / 2);
 
-function testForArrays() {
-	var myArray = [4,3,4,3,5];
-	return myArray;
+	var firstHalf = entryArray.splice(0, halfLength);
+	var secondHalf = entryArray;
+	console.log(firstHalf, secondHalf);
 
+	return firstHalf;
 }
-
-
