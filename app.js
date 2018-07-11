@@ -64,8 +64,8 @@ function currentDate () {
 //}
 
 
-function mergesort (entryArray) {
-//	var entryArray = [arguments];
+function mergesort (...entryArray) {
+
 	var length = entryArray.length;
 	var halfLength = Math.floor(length / 2);
 
@@ -73,5 +73,25 @@ function mergesort (entryArray) {
 	var secondHalf = entryArray;
 	console.log(firstHalf, secondHalf);
 
-	return firstHalf;
+	return "answer";
 }
+
+
+//var entry;
+//var row = "";
+//var currentNumber = 0;
+//function diamond(entry){
+//	if(!entry){
+//		entry = 5;
+//	}
+//	for(i = 1; i <= entry; i ++){
+//		currentNumber ++;
+//		row = row.concat(currentNumber);
+//		console.log(row);
+//	}
+//
+//	for(i = entry; i > 1; i --){
+//		line --;
+//		console.log(currentNumber);
+//	}
+//}
